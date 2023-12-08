@@ -10,7 +10,7 @@
 enum {NJ, J1, J2, J3, J4, MAXJ};
 
 #define SAO_IGUAIS(a, b) (a[0] == b[0] && a[1] == b[1])
-#define INC_JOGA_AGORA(a) (a->joga_agora + 1 > a->n_jogador) ? a->joga_agora = J1 : a->joga_agora++
+#define INC_JOGA_AGORA(a) (a->joga_agora + 1 > a->max_jogador) ? a->joga_agora = J1 : a->joga_agora++
 
 typedef struct no_peca {
     char n[2], jogador;
